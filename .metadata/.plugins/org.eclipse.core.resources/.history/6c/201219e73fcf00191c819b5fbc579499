@@ -1,0 +1,10 @@
+package com.AceInvoice.Pages;
+
+public class BasicDetail {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,30 @@
+/**
+ * 
+ */
+package com.AceInvoice.Testcases;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import com.AceInvoice.Pages.HomePage;
+
+/**
+ * @author manali
+ *  This class calls all the functions which used for verify sign up process
+ */
+public class VerifySignUp 
+{
+
+	public void verifyValidSignUp()
+	{
+		
+		WebDriver driver = new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.get("https://staging.aceinvoice.com/sign_in");
+		
+		HomePage signup = new HomePage(driver);
+		signup.clickSignUpButton();
+		
+	}
+	
+}
