@@ -63,9 +63,9 @@ public class VerifySignUp
 		
 		// Verify user name and email
 		VerifyUserEmail useremail = new VerifyUserEmail(driver);
-		String c = useremail.verifyEmail();
-		String b = useremail.verifyName();
-		if(c.contains(email) & b.contains("Test 1"))
+		String getemail = useremail.verifyEmail();
+		String getname = useremail.verifyName();
+		if(getemail.contains(email) & getname.contains("Test 1"))
 		{
 			System.out.println("Correct User");
 		}else {
