@@ -71,7 +71,7 @@ public class VerifySignUp
 		}else {
 			System.out.println("Invalid user");
 		}
-		
+		driver.quit();
 	}
 	
 }
